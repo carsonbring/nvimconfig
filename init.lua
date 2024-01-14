@@ -19,3 +19,8 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+vim.o.autoindent = true
+vim.o.smartindent = true
+vim.o.cindent = true
+vim.cmd('filetype plugin indent on')
